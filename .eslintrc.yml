@@ -1,7 +1,13 @@
+plugins: 
+  -jest
+
 env:
   browser: true
   es2021: true
-extends: airbnb-base
+extends: 
+  - 'eslint:recommended'
+  - 'airbnb-base'
+  - 'plugin:jest/recommended'
 overrides: []
 parserOptions:
   ecmaVersion: 2020
