@@ -3,7 +3,7 @@ install:
 gendiff:
 	node gendiff.js
 lint: 
-	eslint .
+	npx eslint .
 test:
 	npm test
 test-coverage:
