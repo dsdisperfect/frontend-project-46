@@ -7,8 +7,8 @@
 
 Get the difference between two .yml files:
 
-<script async id="asciicast-PWGl4mnQMYquRD0ZZ2soFeymR" src="https://asciinema.org/a/PWGl4mnQMYquRD0ZZ2soFeymR.js"></script>
+[![asciicast](https://asciinema.org/a/PWGl4mnQMYquRD0ZZ2soFeymR.svg)](https://asciinema.org/a/PWGl4mnQMYquRD0ZZ2soFeymR)
 
 And two .json files:
 
-<script async id="asciicast-AJ0qxMOzGo5AN1qQZUdDF5ido" src="https://asciinema.org/a/AJ0qxMOzGo5AN1qQZUdDF5ido.js"></script>
+[![asciicast](https://asciinema.org/a/AJ0qxMOzGo5AN1qQZUdDF5ido.svg)](https://asciinema.org/a/AJ0qxMOzGo5AN1qQZUdDF5ido)
