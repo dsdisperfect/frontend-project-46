@@ -12,9 +12,14 @@ const getFixtureFile = (filename) => path.join(__dirname, '..', '__fixtures__', 
 const readFile = (filename) => readFileSync(getFixtureFile(filename), 'utf-8');
 
 describe('test', () => {
-  test('function', () => {
+  test('testJSON', () => {
     const file1 = getFixtureFile('file1.json');
     const file2 = getFixtureFile('file2.json');
+    expect(genDiff(file1, file2)).toBe(readFile('result.txt'));
+  });
+  test('testYAML', () => {
+    const file1 = getFixtureFile('file1.yml');
+    const file2 = getFixtureFile('file2.yml');
     expect(genDiff(file1, file2)).toBe(readFile('result.txt'));
   });
 });
