@@ -7,8 +7,8 @@
 
 Get the difference between two .yml files:
 
-[![asciicast](https://asciinema.org/a/PWGl4mnQMYquRD0ZZ2soFeymR.svg)](https://asciinema.org/a/PWGl4mnQMYquRD0ZZ2soFeymR)
+[![asciicast](https://asciinema.org/a/uZ4tzSbST5mIpWNm9HxbnLtEn.svg)](https://asciinema.org/a/uZ4tzSbST5mIpWNm9HxbnLtEn)
 
 And two .json files:
 
-[![asciicast](https://asciinema.org/a/AJ0qxMOzGo5AN1qQZUdDF5ido.svg)](https://asciinema.org/a/AJ0qxMOzGo5AN1qQZUdDF5ido)
+[![asciicast](https://asciinema.org/a/B3Z2I9xN2xtbWy6hZ3Vjxllfs.svg)](https://asciinema.org/a/B3Z2I9xN2xtbWy6hZ3Vjxllfs)
