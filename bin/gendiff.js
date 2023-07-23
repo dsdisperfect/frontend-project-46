@@ -12,5 +12,5 @@ program
     console.log(diff);
   })
   .argument('filepath1')
-  .argument('filepath2')
+  .argument('filepath2');
 program.parse();

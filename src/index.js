@@ -5,7 +5,7 @@ import buildTree from './buildTree.js';
 import parse from './parsers.js';
 import formatter from './formaters/formatters.js';
 
-const genDiff = (fileName1, fileName2, format = stylish) => {
+const genDiff = (fileName1, fileName2, format) => {
   const pathToFile1 = resolve(process.cwd(), '__fixtures__', fileName1);
   const pathToFile2 = resolve(process.cwd(), '__fixtures__', fileName2);
 

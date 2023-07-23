@@ -18,18 +18,26 @@ const stringify = (data, depth) => {
 
 const iter = (nodes, depth = 1) => {
   const result = nodes.map((node) => {
-    if (node.type === 'added') return `${indents(depth)}+ ${node.key}: ${stringify(node.value, depth)}`;
+    switch (node.type) {
+      case 'added':
+        return `${indents(depth)}+ ${node.key}: ${stringify(node.value, depth)}`;
 
-    if (node.type === 'deleted') return `${indents(depth)}- ${node.key}: ${stringify(node.value, depth)}`;
+      case 'deleted':
+        return `${indents(depth)}- ${node.key}: ${stringify(node.value, depth)}`;
 
-    if (node.type === 'nested') return  `${indents(depth)}  ${node.key}: {\n${iter(node.children, depth + 1).join('\n')}\n${indents(depth)}  }`;
+      case 'nested':
+        return `${indents(depth)}  ${node.key}: {\n${iter(node.children, depth + 1).join('\n')}\n${indents(depth)}  }`;
 
-    if (node.type === 'unchanged') return `${indents(depth)}  ${node.key}: ${stringify(node.value, depth)}`;
+      case 'unchanged':
+        return `${indents(depth)}  ${node.key}: ${stringify(node.value, depth)}`;
 
-    if (node.type === 'changed') {
-      const outputDeleted = `${indents(depth)}- ${node.key}: ${stringify(node.oldValue, depth)}`;
-      const outputAdded = `${indents(depth)}+ ${node.key}: ${stringify(node.newValue, depth)}`;
-      return `${outputDeleted}\n${outputAdded}`;
+      case 'changed': {
+        const outputDeleted = `${indents(depth)}- ${node.key}: ${stringify(node.oldValue, depth)}`;
+        const outputAdded = `${indents(depth)}+ ${node.key}: ${stringify(node.newValue, depth)}`;
+        return `${outputDeleted}\n${outputAdded}`;
+      }
+      default:
+        throw new Error('Unknown type');
     }
   });
   return result;
