@@ -1,11 +1,12 @@
 import stylish from './stylish.js';
 
-const formatter = (data, f = stylish) => {
+const formatter = (data, f = 'stylish') => {
   switch (f) {
     case 'stylish':
       return stylish(data);
-    default:
+    default: {
       throw new Error('Unknown format');
+    }
   }
 };
 
