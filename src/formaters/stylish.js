@@ -36,8 +36,9 @@ const iter = (nodes, depth = 1) => {
         const outputAdded = `${indents(depth)}+ ${node.key}: ${stringify(node.newValue, depth)}`;
         return `${outputDeleted}\n${outputAdded}`;
       }
-      default:
+      default: {
         throw new Error('Unknown type');
+      }
     }
   });
   return result;
