@@ -7,10 +7,10 @@
 
 README.md was write by AI
 
-### This is the repository for Frontend Project 46.
+# This is the repository for Frontend Project 46.
 
 ## Description
-# Frontend Project 46 is an exciting web development project that focuses on building a modern and responsive frontend interface. The project compares two files in different formats, .json and .yml, and displays the differences in three output formats.
+### Frontend Project 46 is an exciting web development project that focuses on building a modern and responsive frontend interface. The project compares two files in different formats, .json and .yml, and displays the differences in three output formats.
 The three output formats are:
 1. Text Format (Object): This output format displays the differences in a textual format, using the + and - symbols to indicate the added and removed values. The plus sign represents the values from the second file, while the minus sign represents the values from the first file.
 
@@ -19,7 +19,7 @@ The three output formats are:
 3. JSON Format: This output format provides the differences in a JSON format.
 By default, if no format is specified, the project displays the differences in the first output format.
 
-# Installation
+### Installation
 
 To get started with the project, follow the steps below:
 1. Clone this repository to your local machine using the following command:
@@ -32,7 +32,7 @@ To get started with the project, follow the steps below:
 `gendiff -f 'format(default stylish) fileName fileName`
 
 
-# Output Formats
+### Output Formats
 The project supports three different output formats: text-object(stylish), text-readable(plain), and json. Here's how to specify each format:
 
 * Get the difference between two .yml and .json format in stylish: 

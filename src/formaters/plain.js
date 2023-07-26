@@ -8,7 +8,6 @@ const stringify = (value) => {
 
 const plain = (data, path = '') => {
   const result = data.map((node) => {
-
     const property = [path, node.key].filter(Boolean).join('.');
 
     switch (node.type) {
