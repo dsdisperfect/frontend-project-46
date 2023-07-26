@@ -8,8 +8,9 @@ const stringify = (value) => {
 
 const plain = (data, path = '') => {
   const result = data.map((node) => {
-    let property = `${path}.${node.key}`;
-    if (path === '') property = `${node.key}`;
+
+    const property = [path, node.key].filter(Boolean).join('.');
+
     switch (node.type) {
       case 'nested':
         return plain(node.children, property);
