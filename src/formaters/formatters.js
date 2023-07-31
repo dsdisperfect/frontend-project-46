@@ -2,8 +2,8 @@ import stylish from './stylish.js';
 import plain from './plain.js';
 import json from './json.js';
 
-const formatter = (data, f = 'stylish') => {
-  switch (f) {
+const formatter = (data, format = 'stylish') => {
+  switch (format) {
     case 'stylish':
       return stylish(data);
     case 'plain':
@@ -11,7 +11,7 @@ const formatter = (data, f = 'stylish') => {
     case 'json':
       return json(data);
     default: {
-      throw new Error('Unknown format');
+      throw new Error(`Unknown format: ${format}`);
     }
   }
 };
