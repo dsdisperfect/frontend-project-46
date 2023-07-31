@@ -1,7 +1,7 @@
 import _ from 'lodash';
 
 const buildTree = (file1, file2) => {
-  const unSortedKeys = _.union([Object.keys(file1), Object.keys(file2)].flat());
+  const unSortedKeys = _.union((Object.keys(file1), Object.keys(file2)));
   const keys = _.sortBy(unSortedKeys);
   return keys.map((key) => {
     if (!_.has(file1, key)) return { key, value: file2[key], type: 'added' };
